@@ -1,7 +1,0 @@
-{
-  "name": "药本华山论建",
-  "description": "集班级主页、请假申请、问答助手、休闲游戏于一体的班级智慧管理平台。",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
