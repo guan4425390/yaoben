@@ -118,7 +118,7 @@ export default function App() {
       id: 'assistant-node',
       label: '你的导',
       icon: '🚢',
-      url: 'https://wqjjr4mmsg.coze.site/',
+      url: 'https://ima.qq.com/wiki/?shareId=6a185bc16a54d2114112ac2ad633550eb9bc7f493a7a40169ef6b58d46ec58c8',
       type: 'link',
     }
   ];
