@@ -31,16 +31,9 @@ body{font-family:"Noto Sans CJK SC",-apple-system,BlinkMacSystemFont,"PingFang S
 .status-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;margin-right:6px;
   box-shadow:0 0 10px var(--accent);animation:pulse 2.4s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 10px var(--accent)}50%{opacity:.5;box-shadow:0 0 4px var(--accent)}}
-.sigil{position:relative;width:118px;height:118px;margin:18px auto 14px}
-.ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(62,198,255,.35)}
-.ring.r2{inset:12px;border-color:rgba(110,92,255,.4);animation:spin 14s linear infinite}
-.ring.r3{inset:24px;border-style:dashed;border-color:rgba(150,230,255,.3);animation:spin 9s linear infinite reverse}
-.ring-core{position:absolute;inset:34px;border-radius:50%;
-  background:radial-gradient(circle at 50% 40%,rgba(150,230,255,.9),rgba(62,198,255,.25) 70%,transparent);
-  box-shadow:0 0 26px rgba(62,198,255,.6),0 0 60px rgba(62,198,255,.3)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.inf{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--accent-hi)}
-.inf svg{width:44px;height:44px;filter:drop-shadow(0 0 6px rgba(62,198,255,.8))}
+.hero-art{margin:16px 0 14px;border-radius:16px;overflow:hidden;
+  border:1px solid rgba(62,198,255,.4);box-shadow:0 10px 30px rgba(62,198,255,.22),0 0 0 1px rgba(150,230,255,.12)}
+.gojo-img{display:block;width:100%;height:auto}
 .title{font-size:30px;font-weight:900;letter-spacing:3px;
   background:linear-gradient(180deg,#fff,var(--accent-hi) 70%,var(--accent));
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
@@ -148,9 +141,8 @@ button.btn{width:100%;font-family:inherit;cursor:pointer;line-height:1.2;-webkit
 @media (prefers-reduced-motion:reduce){.particle,.ring.r2,.ring.r3,.status-dot{animation:none!important}}
 </style></head><body><div class="bg-fx"><div class="bg-grad"></div><span class="glow g1"></span><span class="glow g2"></span><span class="glow g3"></span><span class="particle" style="left:11%;bottom:0%;animation-delay:0s;animation-duration:7s;width:2px;height:2px"></span><span class="particle" style="left:48%;bottom:13%;animation-delay:0.7s;animation-duration:8s;width:3px;height:3px"></span><span class="particle" style="left:85%;bottom:26%;animation-delay:1.4s;animation-duration:9s;width:4px;height:4px"></span><span class="particle" style="left:22%;bottom:39%;animation-delay:2.0999999999999996s;animation-duration:10s;width:2px;height:2px"></span><span class="particle" style="left:59%;bottom:52%;animation-delay:2.8s;animation-duration:11s;width:3px;height:3px"></span><span class="particle" style="left:96%;bottom:65%;animation-delay:3.5s;animation-duration:7s;width:4px;height:4px"></span><span class="particle" style="left:33%;bottom:78%;animation-delay:4.199999999999999s;animation-duration:8s;width:2px;height:2px"></span><span class="particle" style="left:70%;bottom:11%;animation-delay:4.8999999999999995s;animation-duration:9s;width:3px;height:3px"></span><span class="particle" style="left:7%;bottom:24%;animation-delay:5.6s;animation-duration:10s;width:4px;height:4px"></span><span class="particle" style="left:44%;bottom:37%;animation-delay:6.3s;animation-duration:11s;width:2px;height:2px"></span><span class="particle" style="left:81%;bottom:50%;animation-delay:7s;animation-duration:7s;width:3px;height:3px"></span><span class="particle" style="left:18%;bottom:63%;animation-delay:7.699999999999999s;animation-duration:8s;width:4px;height:4px"></span><span class="particle" style="left:55%;bottom:76%;animation-delay:8.399999999999999s;animation-duration:9s;width:2px;height:2px"></span><span class="particle" style="left:92%;bottom:9%;animation-delay:0.09999999999999964s;animation-duration:10s;width:3px;height:3px"></span><span class="particle" style="left:29%;bottom:22%;animation-delay:0.7999999999999989s;animation-duration:11s;width:4px;height:4px"></span><span class="particle" style="left:66%;bottom:35%;animation-delay:1.5s;animation-duration:7s;width:2px;height:2px"></span></div><div class="phone"><header class="hero">
     <div class="status-row"><span>2026-11-06</span></div>
-    <div class="sigil">
-    <span class="ring"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring-core"></span>
-    <span class="inf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"/></svg></span>
+    <div class="hero-art">
+    <img class="gojo-img" src="gojo_satoru.jpg" alt="五条悟" width="358" height="188">
   </div>
     <h1 class="title">药本晚报</h1>
     <div class="stat-grid">
