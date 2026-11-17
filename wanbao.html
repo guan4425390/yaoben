@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="zh-CN" data-canvas-width="390" data-canvas-height="844"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>药本晚报 2026-11-16 周一</title><style>
+<title>药本晚报 2026-11-17 周二</title><style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --canvas:#060913;--world:#0D1430;--world2:#141C42;
@@ -61,8 +61,10 @@ button.btn{width:100%;font-family:inherit;cursor:pointer;line-height:1.2;-webkit
   font-size:13px;padding:11px 16px;border-radius:12px;opacity:0;pointer-events:none;
   transition:opacity .25s,transform .25s;box-shadow:0 10px 30px rgba(0,0,0,.5)}
 .toast.show{opacity:1;transform:translate(-50%,0)}
-.mini-panel{width:50%;margin:16px auto 4px;padding:12px 10px;border-radius:16px;
-  background:var(--card2);border:1px solid var(--line);text-align:center}
+.mini-panel{width:92%;margin:16px auto 4px;padding:16px 12px;border-radius:16px;
+  background:var(--card2);border:1px solid var(--line);text-align:center;
+  transition:box-shadow .3s,border-color .3s}
+.mini-panel.highlight{border-color:var(--accent-hi);box-shadow:0 0 0 2px rgba(62,198,255,.55),0 0 28px rgba(62,198,255,.5)}
 .mini-panel .mp-title{font-size:13px;font-weight:800;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;justify-content:center;gap:5px}
 .mini-panel .mp-title svg{width:14px;height:14px}
 .mini-panel .qr-img{width:130px;height:130px;border-radius:12px;display:block;margin:0 auto 10px;
@@ -140,65 +142,77 @@ button.btn{width:100%;font-family:inherit;cursor:pointer;line-height:1.2;-webkit
 .footer{text-align:center;margin-top:28px}
 @media (prefers-reduced-motion:reduce){.particle,.ring.r2,.ring.r3,.status-dot{animation:none!important}}
 </style></head><body><div class="bg-fx"><div class="bg-grad"></div><span class="glow g1"></span><span class="glow g2"></span><span class="glow g3"></span><span class="particle" style="left:11%;bottom:0%;animation-delay:0s;animation-duration:7s;width:2px;height:2px"></span><span class="particle" style="left:48%;bottom:13%;animation-delay:0.7s;animation-duration:8s;width:3px;height:3px"></span><span class="particle" style="left:85%;bottom:26%;animation-delay:1.4s;animation-duration:9s;width:4px;height:4px"></span><span class="particle" style="left:22%;bottom:39%;animation-delay:2.0999999999999996s;animation-duration:10s;width:2px;height:2px"></span><span class="particle" style="left:59%;bottom:52%;animation-delay:2.8s;animation-duration:11s;width:3px;height:3px"></span><span class="particle" style="left:96%;bottom:65%;animation-delay:3.5s;animation-duration:7s;width:4px;height:4px"></span><span class="particle" style="left:33%;bottom:78%;animation-delay:4.199999999999999s;animation-duration:8s;width:2px;height:2px"></span><span class="particle" style="left:70%;bottom:11%;animation-delay:4.8999999999999995s;animation-duration:9s;width:3px;height:3px"></span><span class="particle" style="left:7%;bottom:24%;animation-delay:5.6s;animation-duration:10s;width:4px;height:4px"></span><span class="particle" style="left:44%;bottom:37%;animation-delay:6.3s;animation-duration:11s;width:2px;height:2px"></span><span class="particle" style="left:81%;bottom:50%;animation-delay:7s;animation-duration:7s;width:3px;height:3px"></span><span class="particle" style="left:18%;bottom:63%;animation-delay:7.699999999999999s;animation-duration:8s;width:4px;height:4px"></span><span class="particle" style="left:55%;bottom:76%;animation-delay:8.399999999999999s;animation-duration:9s;width:2px;height:2px"></span><span class="particle" style="left:92%;bottom:9%;animation-delay:0.09999999999999964s;animation-duration:10s;width:3px;height:3px"></span><span class="particle" style="left:29%;bottom:22%;animation-delay:0.7999999999999989s;animation-duration:11s;width:4px;height:4px"></span><span class="particle" style="left:66%;bottom:35%;animation-delay:1.5s;animation-duration:7s;width:2px;height:2px"></span></div><div class="phone"><header class="hero">
-    <div class="status-row"><span>2026-11-16</span></div>
+    <div class="status-row"><span>2026-11-17</span></div>
     <div class="hero-art">
     <img class="gojo-img" src="gojo_satoru.jpg" alt="五条悟" width="358" height="188">
   </div>
     <h1 class="title">药本晚报</h1>
     <div class="stat-grid">
       <div class="stat"><b>253</b><span>应到</span></div>
-      <div class="stat hl"><b>116</b><span>实到</span></div>
-      <div class="stat danger"><b>1</b><span>未出勤</span></div>
-      <div class="stat"><b>16</b><span>已批假</span></div>
+      <div class="stat hl"><b>236</b><span>实到</span></div>
+      <div class="stat danger"><b>4</b><span>未出勤</span></div>
+      <div class="stat"><b>13</b><span>已批假</span></div>
     </div>
+    <div class="quick-actions">
+    <a class="btn btn-primary" href="https://guan4425390.github.io/yaoben/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>主页</a>
+    <a class="btn btn-ghost" href="https://f.kdocs.cn/ksform/w/write/oqbbmiK5/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9l-5-5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>1天请假</a>
+    <a class="btn btn-ghost" href="https://ima.qq.com/wiki/?shareId=6a185bc16a54d2114112ac2ad633550eb9bc7f493a7a40169ef6b58d46ec58c8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2.5-2.5a5 5 0 0 0-7-7L11 4.5"/><path d="M14 11a5 5 0 0 0-7 0L4.5 13.5a5 5 0 0 0 7 7l1.5-1.5"/></svg>蚊剑裤</a>
+    <button type="button" class="btn btn-ghost" data-scroll="mini-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.5V5a2 2 0 0 1 2-2h7.5L21 11.5 12.5 20 3 12.5Z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>工具签</button>
+  </div>
   </header>
   <div class="section">
     <div class="sec-head"><span class="mark"></span><h2>今日要点 · 综合分析</h2></div>
     <div class="panel">
-      <div class="overall">整体出勤率 <b>90.6%</b>（116/128，按今日有课的 2 个班计算）；05班、06班 今日无课，不通报</div>
-      <ul class="brief-list"><li>今日有签到安排的02、04班：应到128人、实到116人，整体出勤率90.6%；其中02班87.5%（低于90%，需重点关注）、04班93.8%。</li><li>05、06班今日真实0签到（接口健康、历史上课日能正常返回数据，非拉取失败），结合02、04班同期签到正常，判定为该两班今日无签到安排，不通报全员；此为基于数据的推断，待企业微信授权恢复后核对群内调课通知。</li><li>最终需通报仅1人：02班林虹怡（1天假“牙齿矫正复诊”未通过审批，仍计未出勤，请按企业微信“审批”口径重新提交）。</li><li>今日已批假16人（02班7人、04班4人、05班2人、06班3人），以病假为主，均不计入通报。</li><li>次日（11月17日）已报备请假1人：04班袁蕴琳（事假，11月16日至17日多日假）。</li><li>临近节点：挑战杯创新创业大赛11月25日截止、肇庆马拉松医疗辅助志愿者11月28日截止、“肇医印记”文创大赛12月14日截止，请有意向的同学尽早准备。</li></ul>
+      <div class="overall">整体出勤率 <b>93.3%</b>（236/253，按今日有课的 4 个班计算）</div>
+      <ul class="brief-list"><li>今日整体应到253人、实到236人，整体出勤率93.28%，四个班总体出勤平稳。</li><li>02班出勤率89.06%，低于90%预警线，需重点关注；04班96.88%、06班96.83%、05班90.32%。</li><li>今日通报4人：02班胡靖厚、巫亮东因连续请假在1天假表单被不审批，须改在企业微信「审批」中提交多天假，未补办前计未出勤；05班胡睿、蔡惠婷全天未签到且无请假记录，属无故未出勤，请尽快说明情况并补签。</li><li>次日请假跟进：04班袁蕴琳已提交11月18日病假（头痛恶心、眼睛酸胀，18日离校、19日返校），当前审批中，请尽快完成审批，通过后按已批假处理。</li><li>临近截止：挑战杯创新创业大赛材料11月25日前提交；肇庆马拉松医疗辅助志愿者11月28日截止，有意向同学抓紧报名。</li><li>其他在途事项：肇医印记校园文创设计大赛12月14日截止；信息系统升级维护安排至12月31日，留意系统暂停访问时间。</li></ul>
     </div>
   </div>
   <div class="section"><div class="sec-head"><span class="mark"></span><h2>各班出勤概况</h2></div><div class="panel class-card">
-      <div class="class-top"><span class="class-name">药学02班</span><span class="badge low">出勤率 87.5%</span></div>
-      <div class="bar"><i class="low" style="width:87.5%"></i></div>
-      <div class="class-nums"><span>应到<b>64</b></span><span>实到<b>56</b></span><span class="danger">未出勤<b>1</b></span></div>
+      <div class="class-top"><span class="class-name">药学02班</span><span class="badge low">出勤率 89.1%</span></div>
+      <div class="bar"><i class="low" style="width:89.1%"></i></div>
+      <div class="class-nums"><span>应到<b>64</b></span><span>实到<b>57</b></span><span class="danger">未出勤<b>2</b></span></div>
     </div><div class="panel class-card">
-      <div class="class-top"><span class="class-name">药学04班</span><span class="badge ok">出勤率 93.8%</span></div>
-      <div class="bar"><i class="" style="width:93.8%"></i></div>
-      <div class="class-nums"><span>应到<b>64</b></span><span>实到<b>60</b></span><span class="danger">未出勤<b>0</b></span></div>
+      <div class="class-top"><span class="class-name">药学04班</span><span class="badge ok">出勤率 96.9%</span></div>
+      <div class="bar"><i class="" style="width:96.9%"></i></div>
+      <div class="class-nums"><span>应到<b>64</b></span><span>实到<b>62</b></span><span class="danger">未出勤<b>0</b></span></div>
     </div><div class="panel class-card">
-        <div class="class-top"><span class="class-name">药学05班</span><span class="badge nc">今日无课</span></div>
-        <div class="class-nums"><span>名册<b>62</b></span><span>签到<b>0</b></span><span>已批假<b>2</b></span></div>
-      </div><div class="panel class-card">
-        <div class="class-top"><span class="class-name">药学06班</span><span class="badge nc">今日无课</span></div>
-        <div class="class-nums"><span>名册<b>63</b></span><span>签到<b>0</b></span><span>已批假<b>3</b></span></div>
-      </div></div>
+      <div class="class-top"><span class="class-name">药学05班</span><span class="badge ok">出勤率 90.3%</span></div>
+      <div class="bar"><i class="" style="width:90.3%"></i></div>
+      <div class="class-nums"><span>应到<b>62</b></span><span>实到<b>56</b></span><span class="danger">未出勤<b>2</b></span></div>
+    </div><div class="panel class-card">
+      <div class="class-top"><span class="class-name">药学06班</span><span class="badge ok">出勤率 96.8%</span></div>
+      <div class="bar"><i class="" style="width:96.8%"></i></div>
+      <div class="class-nums"><span>应到<b>63</b></span><span>实到<b>61</b></span><span class="danger">未出勤<b>0</b></span></div>
+    </div></div>
   <div class="section">
     <div class="sec-head"><span class="mark"></span><h2>今日未出勤 · 已剔除批假</h2></div>
     <div class="panel">
-      <div class="cls-label">药学02班 · 1 人</div><div class="absent-item">
-          <div class="abs-head"><span class="abs-name">林虹怡</span><span class="reject-badge">请假被驳回</span></div>
-          <div class="reject-reason"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12v5M12 8h.01"/><circle cx="12" cy="12" r="9"/></svg><span>未通过审批，请在企业微信「审批」中重新提交</span></div>
-        </div>
-      <div class="cls-label" style="margin-top:16px">以下为已批假，不计入通报</div><div class="cls-label">药学02班 · 7 人</div>
-      <div class="name-tags"><span class="ntag leave">崔雅雯<i>病假</i></span><span class="ntag leave">胡靖厚<i>病假</i></span><span class="ntag leave">欧可璇<i>事假</i></span><span class="ntag leave">蔡佳祥<i>病假</i></span><span class="ntag leave">巫亮东<i>病假</i></span><span class="ntag leave">李晓韵<i>病假</i></span><span class="ntag leave">苏敏怡<i>病假</i></span></div><div class="cls-label">药学04班 · 4 人</div>
-      <div class="name-tags"><span class="ntag leave">冯觉平<i>事假</i></span><span class="ntag leave">欧阳嘉俊<i>病假</i></span><span class="ntag leave">曾港阅<i>病假</i></span><span class="ntag leave">袁蕴琳<i>事假</i></span></div><div class="cls-label">药学05班 · 2 人</div>
-      <div class="name-tags"><span class="ntag leave">余浩然<i>病假</i></span><span class="ntag leave">林纪彤<i>事假</i></span></div><div class="cls-label">药学06班 · 3 人</div>
-      <div class="name-tags"><span class="ntag leave">赖颖棋<i>病假</i></span><span class="ntag leave">陈宝怡<i>病假</i></span><span class="ntag leave">黄佳怡<i>病假</i></span></div>
+      <div class="cls-label">药学02班 · 2 人</div><div class="absent-item">
+          <div class="abs-head"><span class="abs-name">胡靖厚</span><span class="reject-badge">请假被驳回</span></div>
+          <div class="reject-reason"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12v5M12 8h.01"/><circle cx="12" cy="12" r="9"/></svg><span>连续请假：1天假表单仅受理单次请假，连续/多天请假请在企业微信「审批」中提交</span></div>
+        </div><div class="absent-item">
+          <div class="abs-head"><span class="abs-name">巫亮东</span><span class="reject-badge">请假被驳回</span></div>
+          <div class="reject-reason"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12v5M12 8h.01"/><circle cx="12" cy="12" r="9"/></svg><span>连续请假：1天假表单仅受理单次请假，连续/多天请假请在企业微信「审批」中提交</span></div>
+        </div><div class="cls-label">药学05班 · 2 人</div><div class="absent-item">
+        <div class="abs-head"><span class="abs-name">胡睿</span><span class="abs-tag">全天未签到</span></div>
+      </div><div class="absent-item">
+        <div class="abs-head"><span class="abs-name">蔡惠婷</span><span class="abs-tag">全天未签到</span></div>
+      </div>
+      <div class="cls-label" style="margin-top:16px">以下为已批假，不计入通报</div><div class="cls-label">药学02班 · 5 人</div>
+      <div class="name-tags"><span class="ntag leave">吴文杰<i>病假</i></span><span class="ntag leave">林虹怡<i>事假</i></span><span class="ntag leave">陈喜珍<i>病假</i></span><span class="ntag leave">张佳琪<i>病假</i></span><span class="ntag leave">黄泽恒<i>病假</i></span></div><div class="cls-label">药学04班 · 2 人</div>
+      <div class="name-tags"><span class="ntag leave">冯锐祺<i>病假</i></span><span class="ntag leave">袁蕴琳<i>事假</i></span></div><div class="cls-label">药学05班 · 4 人</div>
+      <div class="name-tags"><span class="ntag leave">余浩然<i>病假</i></span><span class="ntag leave">杨丽颖<i>病假</i></span><span class="ntag leave">彭佳耿<i>事假</i></span><span class="ntag leave">李绿茵<i>病假</i></span></div><div class="cls-label">药学06班 · 2 人</div>
+      <div class="name-tags"><span class="ntag leave">周乐平<i>病假</i></span><span class="ntag leave">徐士嵘<i>病假</i></span></div>
     </div>
   </div>
-  <div class="section"><div class="sec-head"><span class="mark"></span><h2>明日请假 · 2026-11-17</h2></div><div class="panel">
-    <div class="cls-label">04班 · 1 人</div>
-    <div class="name-tags"><span class="ntag leave">袁蕴琳<i>事假</i></span></div>
-  </div></div>
+  <div class="section"><div class="sec-head"><span class="mark"></span><h2>明日请假 · 2026-11-18</h2></div><div class="panel"><div class="empty">明日暂无已报备请假</div></div></div>
   
   <div class="section"><div class="sec-head"><span class="mark"></span><h2>近期信息提要</h2></div><div class="panel">
     <div class="notice">
       <div class="nt">“科创逐光，筑梦远航”挑战杯创新创业大赛</div>
       <div class="nb">药学院挑战杯院赛启动，择优推荐校赛。请有意向的同学尽快组队（每队3-8人，配1-2名指导老师），在 11月25日中午12点前 把材料发到 zqmcyxy@163.com；院赛定于 11月26日晚6:30，现场汇报5分钟。</div>
       <div class="nmeta">
-        <span class="chip dl">截止：2026-11-25 12:00</span><span class="chip cd">还剩 9 天</span>
+        <span class="chip dl">截止：2026-11-25 12:00</span><span class="chip cd">还剩 8 天</span>
         <span class="chip to">提交至：zqmcyxy@163.com</span>
       </div>
       <div class="mats"><span class="mat">项目计划书（Word，docx 格式）</span><span class="mat">汇报 PPT</span><span class="mat">初赛报名表</span></div>
@@ -216,7 +230,7 @@ button.btn{width:100%;font-family:inherit;cursor:pointer;line-height:1.2;-webkit
       <div class="nt">肇庆医学院首届“肇医印记”校园文创设计大赛</div>
       <div class="nb">首届“肇医印记”校园文创设计大赛启动，请积极参赛。请于12月14日前将参赛作品发送至 zqmcyxy@163.com，文件命名：校园文创设计大赛+赛道类别+作品名称+姓名/团队+学院+联系电话。材料含报名表、设计说明、作品图、源文件、签字版原创承诺书，相关附件到创新创业学院公众号查看。</div>
       <div class="nmeta">
-        <span class="chip dl">截止：2026-12-14 23:59</span><span class="chip cd">还剩 28 天</span>
+        <span class="chip dl">截止：2026-12-14 23:59</span><span class="chip cd">还剩 27 天</span>
         <span class="chip to">提交至：zqmcyxy@163.com</span>
       </div>
       <div class="mats"><span class="mat">报名表</span><span class="mat">设计说明</span><span class="mat">作品图</span><span class="mat">源文件</span><span class="mat">签字版原创承诺书</span></div>
@@ -233,11 +247,13 @@ button.btn{width:100%;font-family:inherit;cursor:pointer;line-height:1.2;-webkit
   <div class="footer"><div class="quick-actions">
     <a class="btn btn-primary" href="https://guan4425390.github.io/yaoben/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>主页</a>
     <a class="btn btn-ghost" href="https://f.kdocs.cn/ksform/w/write/oqbbmiK5/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9l-5-5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>1天请假</a>
-    <a class="btn btn-ghost btn-wide" href="https://ima.qq.com/wiki/?shareId=6a185bc16a54d2114112ac2ad633550eb9bc7f493a7a40169ef6b58d46ec58c8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2.5-2.5a5 5 0 0 0-7-7L11 4.5"/><path d="M14 11a5 5 0 0 0-7 0L4.5 13.5a5 5 0 0 0 7 7l1.5-1.5"/></svg>蚊剑裤</a>
+    <a class="btn btn-ghost" href="https://ima.qq.com/wiki/?shareId=6a185bc16a54d2114112ac2ad633550eb9bc7f493a7a40169ef6b58d46ec58c8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2.5-2.5a5 5 0 0 0-7-7L11 4.5"/><path d="M14 11a5 5 0 0 0-7 0L4.5 13.5a5 5 0 0 0 7 7l1.5-1.5"/></svg>蚊剑裤</a>
+    <button type="button" class="btn btn-ghost" data-scroll="mini-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.5V5a2 2 0 0 1 2-2h7.5L21 11.5 12.5 20 3 12.5Z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>工具签</button>
   </div><div class="mini-panel" id="mini-panel">
     <div class="mp-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.5V5a2 2 0 0 1 2-2h7.5L21 11.5 12.5 20 3 12.5Z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>工具签</div>
     <img class="qr-img" src="tool_sign_qrcode.jpg" alt="工具签小程序码" width="130" height="130">
-    <div class="mp-tip">长按扫描进入</div>
+    <div class="mp-tip">微信内长按下方小程序码，识别后直接打开</div>
+    <div class="mp">#小程序://工具签/su4Se23hEN01RPp</div>
     <div class="mp-row"><button type="button" class="mini-copy" data-path="#小程序://工具签/su4Se23hEN01RPp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.5V5a2 2 0 0 1 2-2h7.5L21 11.5 12.5 20 3 12.5Z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg>复制路径</button></div>
   </div></div></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -256,7 +272,17 @@ button.btn{width:100%;font-family:inherit;cursor:pointer;line-height:1.2;-webkit
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok).catch(function(){legacy(txt,ok);});}
     else{legacy(txt,ok);}
   }
+  var panel=document.getElementById('mini-panel'),hlTimer;
+  function scrollToPanel(){
+    if(!panel)return;
+    panel.scrollIntoView({behavior:'smooth',block:'center'});
+    panel.classList.add('highlight');
+    clearTimeout(hlTimer);
+    hlTimer=setTimeout(function(){panel.classList.remove('highlight');},2200);
+  }
   document.addEventListener('click',function(e){
+    var scrollBtn=e.target.closest&&e.target.closest('[data-scroll]');
+    if(scrollBtn){e.preventDefault();scrollToPanel();return;}
     var copyBtn=e.target.closest&&e.target.closest('.mini-copy');
     if(copyBtn){copyText(copyBtn.getAttribute('data-path'),function(){showToast('工具签路径已复制，去微信粘贴打开');});}
   });
